@@ -1,0 +1,20 @@
+body {
+    background-color: #1a202c;
+}
+
+#myBoard {
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* Responsif untuk layar lebih besar */
+@media (min-width: 600px) {
+    #myBoard {
+        width: 450px;
+    }
+}
+
+/* Animasi sederhana saat bidak bergerak */
+.chessboard-63f59 {
+    transition: all 0.2s ease;
+}

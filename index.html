@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catur AI - Professional Structure</title>
+    
+    <!-- Import Library Luar -->
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Hubungkan ke file CSS lokal kita -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+
+    <h1 class="text-2xl font-bold mb-4">Catur AI <span class="text-blue-500">Master</span></h1>
+    
+    <div id="myBoard" class="shadow-2xl border-4 border-slate-700 rounded-lg"></div>
+
+    <div class="mt-6 text-center w-full max-w-md">
+        <div id="status" class="bg-slate-800 p-3 rounded-lg mb-4 text-sm font-mono text-white">
+            Status: Menunggu langkah...
+        </div>
+        <button id="resetBtn" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-bold transition">
+            Mulai Ulang Game
+        </button>
+    </div>
+
+    <!-- Hubungkan ke file JavaScript lokal kita -->
+    <script src="script.js"></script>
+</body>
+</html>
